@@ -2,23 +2,19 @@
     ViewBag.Title = "Home Page";
 }
 
-<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
-<link href="~/Content/Styles.css" rel="stylesheet" />
-
-@{
-    ViewBag.Title = "Home Page";
-}
-
-<div class="container-fluid" id="DanJones">
+<div class="container" id="background-home">
     <div class="row">
         <div class="col-md-12">
-            <div class="container">
-                <h1>Where are you serving?</h1>
-                <p class="lead">Do you know what kind of winter clothing to buy?</p>
-                <p><a href="@Url.Action("ChooseMission","Home")" class="btn btn-primary btn-lg">Ask The Missionaries!</a></p>
-            </div>
+           
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Where are you serving?</h1>
+            <p class="lead">Do you know what kind of winter clothing to buy?</p>
+            <p><a href="@Url.Action("ChooseMission","Home")" class="btn btn-primary btn-lg">Ask The Missionaries!</a></p>
         </div>
     </div>
 </div>
