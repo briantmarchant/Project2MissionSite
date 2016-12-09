@@ -1,0 +1,25 @@
+﻿@model Project2MissionSite.Models.Mission
+
+@{
+    ViewBag.Title = "ChooseMission";
+}
+
+
+<div class="container">
+    <div class="row text-center">
+        <h2>Choose A Mission</h2>
+
+        @using (Html.BeginForm("MissionFAQ", "Home", FormMethod.Get))
+        {
+            <fieldset>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        @Html.DropDownListFor(model => model.MissionID, new SelectList(ViewBag.ChooseMission, "MissionID", "MissionName"))
+                        @Html.ValidationMessageFor(model => model.MissionID, "", new { @class = "text-danger" })
+                        <input type="submit" value="GO" class="btn btn-primary" />
+                    </div>
+                </div>
+            </fieldset>
+        }
+    </div>
+</div>

@@ -1,0 +1,80 @@
+﻿body {
+}
+
+.img-sizing {
+    height: 200px;
+    width: 200px:
+
+}
+
+.img-center {
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fm-input {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.btn-sizing {
+    width: 280px;
+}
+
+.faqHeader {
+        font-size: 27px;
+        margin: 20px;
+    }
+
+    .panel-heading [data-toggle="collapse"]:after {
+        font-family: FontAwesome;
+        content: "\f04b"; /* "play" icon */
+        float: right;
+        color: #F58723;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 22px;
+        /* rotate "play" icon from > (right arrow) to down arrow */
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+
+    .panel-heading [data-toggle="collapse"].collapsed:after {
+        /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        color: #454444;
+    }
+
+    .jumbotron{
+ position: relative;
+ z-index:-101;
+}
+
+ 
+#video-background { 
+     position: fixed;
+       top: 0;
+       right: 0;
+       bottom: 0;
+       left: 0;
+       overflow: hidden;
+       z-index: -100;
+       width:100%;
+}
+#DanJones {
+    background-image: url(../Content/Images/DanJones.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: black;
+    height: 500px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
